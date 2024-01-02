@@ -1,0 +1,171 @@
+
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       /* height: 100vh;*/ /* Usar la altura completa de la ventana gráfica */
+        background-color: black;
+        flex-direction: column;
+        
+      /*  padding: 0;*/
+    }
+    
+
+/*#ContenedorPrincipal{
+    width: 80%;
+    max-width: 1200px; /* Ancho máximo del contenedor */
+   /* padding: 100px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc5b;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    height: 60%;/*Controlar lo largo,altura*/
+    
+/*}*/
+
+#Titulo{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    /*Poner contenedor arriba de todo*/
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    margin: 0% auto;
+    width: 80%;
+    border-radius: 0 0 10px 10px;
+    font-weight: 500;
+
+}
+
+#Contenido p{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-decoration: dotted;
+    font-weight: 500;/*grosor del texto*/
+}
+#Contenido h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    font-size: 20px;
+}
+#Catalogos{
+    background-color: cadetblue;
+    display: flex;/*Las categorias una al lado de la otra*/
+    justify-content: center;/*Las categorias estan en el medio del contenedor*/
+   /* position: absolute;////////////////////////*/
+   /* top: 50px;*/
+    width: 82%;
+    border-radius: 10px 10px 10px 10px;
+    z-index: 2;
+    margin-bottom: 20px;
+    margin-top: 56px;
+    
+}
+@media only screen and (min-width:801px){
+    #Catalogos h4{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-right: 10%;/*Espacio entre las categorias*/
+        padding: 1%;
+        border: 1px solid #ccc;
+        font-size: 100%;
+        
+    }
+}
+
+@media only screen and (max-width:800px){
+    #Catalogos h4{
+        margin-right: 2%;
+        font-size: 80%;
+        color:white;
+        font-size: small;
+    }
+    h3{
+        font-size: medium;
+    }
+}
+
+#Catalogos h4:hover{ /*Cambiar de color cuando el mouse pasa por encima*/
+    color:darkgray;
+}
+
+@media only screen and (min-width:801px){
+    .CatalogoC {
+        background-color:blanchedalmond;
+        width: 84%;
+        border-radius: 10px;
+        z-index: 1;
+       /* margin-top: -24%;*/ /* Ajusta el margen según sea necesario */
+         /* Ajusta el z-index para que esté por encima de #Catalogos */
+        margin-top: 0%;
+        height: auto;
+       /* height: 80%;*/
+       /* margin-bottom: 10px;*/
+    }
+    #BTNCerrar{
+        background-color: black;
+        color: antiquewhite;
+        border-radius: 20px;
+        width: 26px;
+        height: 26px;
+        margin-top: 26px;
+    
+    }
+}
+@media only screen and (max-width:800px){
+    .CatalogoC {
+        background-color:blanchedalmond;
+        width: 82%;
+        border-radius: 10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 2%;
+      /*  margin-top: -148%;*/ /* Ajusta el margen según sea necesario */
+         /* Ajusta el z-index para que esté por encima de #Catalogos */
+         height: auto;
+    }
+    #BTNCerrar{
+
+        background-color: black;
+        color: antiquewhite;
+        border-radius: 20px;
+        width: 8%;
+        height: 6%;
+        margin-top: 4%;
+        text-align: center;
+    
+    }
+}
+.Ropa img{
+    height: 320px;
+    width: 180px;
+    border:100% solid black;
+ /*   justify-content: center;*/
+   margin-top: 8px;
+    margin-left: 9px;
+    border-radius: 5px;
+}
+
+#BTNCerrar:hover{
+    background-color: darkgrey;
+    color: black;
+}
+#CCatalogo{
+    
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+   /* Añade flex-wrap para que los elementos se envuelvan en una nueva línea si no caben */
+   /*Las categorias estan en el medio del contenedor*/
+    /* Alinea los elementos en la parte superior del contenedor */
+    
+}
+#CCatalogo h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 500;
+    margin: 6%;
+}
